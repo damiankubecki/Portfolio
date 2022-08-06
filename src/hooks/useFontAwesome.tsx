@@ -1,39 +1,21 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { IconProp, library } from '@fortawesome/fontawesome-svg-core';
-import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import {
-  faLocationDot,
-  faMapLocationDot,
-  faPhone,
-  faEnvelope,
-  faArrowUp,
-  faBars,
-} from '@fortawesome/free-solid-svg-icons';
+import { IconProp, library, SizeProp } from '@fortawesome/fontawesome-svg-core';
+import { faFacebook, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 interface IIconProps {
   color: string;
+  size: SizeProp;
   icon: IconProp;
 }
 
 const useFontAwesome = () => {
-  const initFontAwesome = () => {
-    library.add(
-      faFacebook,
-      faInstagram,
-      faLocationDot,
-      faMapLocationDot,
-      faPhone,
-      faEnvelope,
-      faArrowUp,
-      faBars
-    );
-  };
+  library.add(faFacebook, faGithub, faLinkedinIn);
 
-  const Icon = ({ color, icon }: IIconProps): JSX.Element => (
-    <FontAwesomeIcon color={color} icon={icon} />
+  const Icon = ({ color, size, icon }: IIconProps): JSX.Element => (
+    <FontAwesomeIcon color={color} size={size} icon={icon} />
   );
 
-  return { initFontAwesome, Icon };
+  return { Icon };
 };
 export default useFontAwesome;
