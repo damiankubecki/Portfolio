@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp, library, SizeProp } from '@fortawesome/fontawesome-svg-core';
+import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 interface IIconProps {
@@ -10,7 +11,7 @@ interface IIconProps {
 }
 
 const useFontAwesome = () => {
-  library.add(faFacebook, faGithub, faLinkedinIn);
+  library.add(faFacebook, faGithub, faLinkedinIn, faAnglesDown);
 
   const Icon = ({ color, size, icon }: IIconProps): JSX.Element => (
     <FontAwesomeIcon color={color} size={size} icon={icon} />
