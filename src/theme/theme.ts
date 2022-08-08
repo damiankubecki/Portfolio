@@ -1,10 +1,13 @@
-const theme = {
+import { ITheme } from 'types/types';
+
+const theme: ITheme = {
   primary: '#212529',
   secondary: '#333326',
   additional: '#64644b',
-  fontColor: '#ddd',
+  fontColor: '#ccc',
   lightFont: 100,
-  boldFont: 300,
+  semiFont: 300,
+  boldFont: 500,
   fontSize: {
     xxxs: '0.8rem',
     xxs: '1rem',
