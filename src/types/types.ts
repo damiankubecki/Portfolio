@@ -21,3 +21,12 @@ export interface IIconItem {
   name: string;
   src: string;
 }
+
+export interface IProject {
+  name: string;
+  note: string;
+  liveLink?: string;
+  codeLink?: string;
+  technologies?: string[];
+  image: string;
+}
