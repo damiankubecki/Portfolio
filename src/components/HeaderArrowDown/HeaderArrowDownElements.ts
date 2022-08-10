@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   position: absolute;
-  bottom: 60px;
+  bottom: 40px;
   left: 50%;
   animation: move 2s linear infinite;
   cursor: pointer;

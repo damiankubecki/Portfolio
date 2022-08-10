@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 
 const Img = styled.img`
   height: 100%;
-  filter: grayscale(60%);
+  filter: grayscale(30%);
   animation: show 0.25s linear both;
   cursor: pointer;
 

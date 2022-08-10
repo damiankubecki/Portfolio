@@ -18,14 +18,14 @@ const Wrapper = styled.header`
 
 const TopSection = styled.div`
   padding: 125px 150px 0;
-  height: 75vh;
+  height: 80vh;
   background-color: ${({ theme }) => theme.secondary};
   opacity: 0.95;
 `;
 
 const BottomSection = styled.div`
   position: relative;
-  height: 25vh;
+  height: 20vh;
   background-color: ${({ theme }) => theme.primary};
 `;
 
