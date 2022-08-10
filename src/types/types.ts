@@ -1,5 +1,17 @@
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
+type technologies =
+  | 'html'
+  | 'css'
+  | 'sass'
+  | 'styled-components'
+  | 'javascript'
+  | 'typescript'
+  | 'react'
+  | 'redux'
+  | 'npm'
+  | 'git';
+
 export interface ITheme {
   primary: string;
   secondary: string;
@@ -24,7 +36,7 @@ export interface IContactLink {
 }
 
 export interface IIconItem {
-  name: string;
+  name: technologies;
   src: string;
 }
 
@@ -33,6 +45,6 @@ export interface IProject {
   note: string;
   liveLink?: string;
   codeLink?: string;
-  technologies?: string[];
+  technologies?: technologies[];
   image: string;
 }

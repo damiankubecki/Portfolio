@@ -41,11 +41,22 @@ const Note = styled.p`
   font-weight: ${({ theme }) => theme.semiFont};
 `;
 
+const TechnologiesContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+const TechnologyItem = styled.img`
+  height: 45px;
+  margin: 0 2px;
+  filter: grayscale(30%);
+`;
+
 const ButtonsContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px 0 0;
+  margin: 30px 0;
 `;
 
 export {
@@ -54,6 +65,8 @@ export {
   DescriptionContainer,
   Title,
   Note,
+  TechnologiesContainer,
+  TechnologyItem,
   ButtonsContainer,
   MainProjectButton as Button,
 };

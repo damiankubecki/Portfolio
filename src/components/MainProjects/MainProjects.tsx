@@ -11,6 +11,7 @@ const MainProjects = () => (
         note={item.note}
         liveLink={item.liveLink}
         codeLink={item.codeLink}
+        technologies={item?.technologies}
         image={item.image}
         odd={!!(index % 2)}
       />
