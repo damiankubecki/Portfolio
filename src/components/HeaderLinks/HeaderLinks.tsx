@@ -3,11 +3,11 @@ import useFontAwesome from 'hooks/useFontAwesome';
 import { IContactLink } from 'types/types';
 import { Wrapper, Item } from './HeaderLinksElements';
 
-interface HeaderLinksProps {
+interface Props {
   linksList: IContactLink[];
 }
 
-const HeaderLinks = ({ linksList }: HeaderLinksProps) => {
+const HeaderLinks = ({ linksList }: Props) => {
   const { Icon } = useFontAwesome();
 
   return (

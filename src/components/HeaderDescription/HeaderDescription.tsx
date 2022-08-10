@@ -1,10 +1,10 @@
 import React from 'react';
 import { Wrapper } from './HeaderDescriptionElements';
 
-interface HeaderDescriptionProps {
+interface Props {
   children: string;
 }
 
-const HeaderDescription = ({ children }: HeaderDescriptionProps) => <Wrapper>{children}</Wrapper>;
+const HeaderDescription = ({ children }: Props) => <Wrapper>{children}</Wrapper>;
 
 export default HeaderDescription;

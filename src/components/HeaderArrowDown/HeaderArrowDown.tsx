@@ -5,11 +5,11 @@ import { arrowDownIcon } from 'config';
 import { ITheme } from 'types/types';
 import { Wrapper } from './HeaderArrowDownElements';
 
-interface HeaderArrowDownProps {
+interface Props {
   handleClick: () => void;
 }
 
-const HeaderArrowDown = ({ handleClick }: HeaderArrowDownProps) => {
+const HeaderArrowDown = ({ handleClick }: Props) => {
   const { Icon } = useFontAwesome();
   const theme = useTheme() as ITheme;
 

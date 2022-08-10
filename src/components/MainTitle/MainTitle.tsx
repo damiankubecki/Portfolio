@@ -1,10 +1,10 @@
 import React from 'react';
 import { Title } from './MainTitleElements';
 
-interface MainTitleProps {
+interface Props {
   children: string;
 }
 
-const MainTitle = ({ children }: MainTitleProps) => <Title>{children}</Title>;
+const MainTitle = ({ children }: Props) => <Title>{children}</Title>;
 
 export default MainTitle;
