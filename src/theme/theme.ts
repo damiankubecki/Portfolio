@@ -13,7 +13,7 @@ const theme: ITheme = {
     xxs: '1rem',
     xs: '1.2rem',
     s: '1.4rem',
-    m: '1.8rem',
+    m: '1.6rem',
     l: '2rem',
     xl: '2.8rem',
     xxl: '4rem',
