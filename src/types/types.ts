@@ -11,6 +11,12 @@ export interface ITheme {
   fontSize: object;
 }
 
+export interface IHeaderContent {
+  title: string;
+  subtitle: string;
+  description: string;
+}
+
 export interface IContactLink {
   name: string;
   link: string;
