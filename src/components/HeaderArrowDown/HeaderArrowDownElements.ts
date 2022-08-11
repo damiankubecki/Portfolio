@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { media } from 'theme/media';
 
 const Wrapper = styled.div`
   position: absolute;
@@ -17,6 +18,10 @@ const Wrapper = styled.div`
     100% {
       transform: translate(-50%, 0);
     }
+  }
+
+  @media (max-width: ${media.tablet_M}) {
+    bottom: 25px;
   }
 `;
 

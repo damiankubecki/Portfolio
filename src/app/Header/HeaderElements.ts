@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { media } from 'theme/media';
 import backgroundIMG from 'images/headerBackground.jpg';
 import meIMG from 'images/me.png';
 import HeaderTitle from 'components/HeaderTitle/HeaderTitle';
@@ -17,28 +18,65 @@ const Wrapper = styled.header`
 `;
 
 const TopSection = styled.div`
+  display: flex;
+  flex-direction: column;
   padding: 125px 150px 0;
-  height: 80vh;
+  height: calc(100vh - 160px);
   background-color: ${({ theme }) => theme.secondary};
   opacity: 0.95;
+
+  @media (max-width: ${media.laptop}) {
+    padding: 125px 50px 0;
+  }
+  @media (max-width: ${media.tablet_L}) {
+    padding: 50px 50px 0;
+  }
+  @media (max-width: ${media.tablet_S}) {
+    padding: 20px 10px 0;
+    height: calc(100vh - 35px);
+  }
 `;
 
 const BottomSection = styled.div`
   position: relative;
-  height: 20vh;
+  height: 160px;
   background-color: ${({ theme }) => theme.primary};
+
+  @media (max-width: ${media.tablet_S}) {
+    height: 35px;
+  }
 `;
 
 const MyPhoto = styled.div`
   height: 600px;
   width: 550px;
   position: absolute;
-  bottom: 25vh;
-  left: calc(50% + 200px);
+  bottom: calc(160px + 125px / 2);
+  left: calc(50% + 110px);
   background-image: url(${meIMG});
   background-position: top center;
   background-size: cover;
   transform: scaleX(-1);
+
+  @media (max-width: ${media.laptop}) {
+    left: calc(50% + 70px);
+  }
+  @media (max-width: ${media.tablet_L}) {
+    height: 400px;
+    width: 370px;
+    left: calc(50% + 150px);
+    bottom: calc(160px + 115px / 2);
+  }
+  @media (max-width: ${media.tablet_M}) {
+    left: 50%;
+  }
+  @media (max-width: ${media.tablet_S}) {
+    left: auto;
+    right: 0;
+    height: 290px;
+    width: 260px;
+    bottom: 35px;
+  }
 `;
 
 export {

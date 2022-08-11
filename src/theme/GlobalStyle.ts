@@ -20,6 +20,7 @@ const GlobalStyle = createGlobalStyle<{ theme: ITheme }>`
     font-size: 1.6rem;
     min-height: 100vh;
     background-color: ${({ theme }) => theme.primary};
+    overflow-x: hidden;
   }
 
   ::-webkit-scrollbar {

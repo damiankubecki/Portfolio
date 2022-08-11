@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { media } from 'theme/media';
 
 const Title = styled.h2`
   position: relative;
@@ -7,6 +8,10 @@ const Title = styled.h2`
   color: ${({ theme }) => theme.fontColor};
   font-weight: ${({ theme }) => theme.semiFont};
   font-size: ${({ theme }) => theme.fontSize.xxl};
+
+  @media (max-width: ${media.tablet_S}) {
+    font-size: ${({ theme }) => theme.fontSize.xl};
+  }
 `;
 
 export { Title };

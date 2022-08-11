@@ -1,14 +1,22 @@
 import styled from 'styled-components';
+import { media } from 'theme/media';
 import MainProjectButton from 'components/MainProjectButton/MainProjectButton';
 
 const Wrapper = styled.div`
   display: flex;
   width: 100%;
   margin: 50px 0 100px;
+
+  @media (max-width: ${media.tablet_S}) {
+    margin: 30px 0 75px;
+    flex-direction: column;
+  }
 `;
 
 const ImageContainer = styled.div`
   flex-basis: 50%;
+  display: flex;
+  align-items: center;
   order: 3;
 
   & > img {
@@ -18,12 +26,35 @@ const ImageContainer = styled.div`
   &.odd {
     order: 1;
   }
+
+  @media (max-width: ${media.tablet_M}) {
+    flex-basis: 45%;
+  }
+  @media (max-width: ${media.tablet_S}) {
+    flex-direction: column;
+
+    & > img {
+      width: 80%;
+    }
+
+    &.odd {
+      order: 3;
+    }
+  }
 `;
 
 const DescriptionContainer = styled.div`
   padding: 10px 50px;
   flex-basis: 50%;
   order: 2;
+
+  @media (max-width: ${media.tablet_M}) {
+    padding: 5px 15px;
+    flex-basis: 55%;
+  }
+  @media (max-width: ${media.tablet_S}) {
+    text-align: center;
+  }
 `;
 
 const Title = styled.h3`

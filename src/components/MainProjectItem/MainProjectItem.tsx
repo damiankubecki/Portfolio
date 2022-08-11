@@ -1,4 +1,5 @@
 import React from 'react';
+import useMediaQueries from 'hooks/useMediaQueries';
 import { skillsList } from 'config';
 import { IProject } from 'types/types';
 import {
@@ -26,26 +27,50 @@ const MainProjectItem = ({
   technologies,
   odd = false,
 }: Props) => {
+  const { isTabletS } = useMediaQueries();
+
   return (
     <Wrapper>
       <DescriptionContainer>
         <Title>{name}</Title>
         <Note>{note}</Note>
-        <ButtonsContainer>
-          {liveLink && <Button type="live" link={liveLink} />}
-          {codeLink && <Button type="code" link={codeLink} />}
-        </ButtonsContainer>
-        <TechnologiesContainer>
-          {technologies?.map(item => {
-            const icon = skillsList.find(skill => skill.name === item);
+        {!isTabletS && (
+          <>
+            <ButtonsContainer>
+              {liveLink && <Button type="live" link={liveLink} />}
+              {codeLink && <Button type="code" link={codeLink} />}
+            </ButtonsContainer>
+            <TechnologiesContainer>
+              {technologies?.map(item => {
+                const icon = skillsList.find(skill => skill.name === item);
 
-            return icon ? <TechnologyItem key={item} src={icon.src} alt={icon.name} /> : undefined;
-          })}
-        </TechnologiesContainer>
+                return icon ? (
+                  <TechnologyItem key={item} src={icon.src} alt={icon.name} />
+                ) : undefined;
+              })}
+            </TechnologiesContainer>
+          </>
+        )}
       </DescriptionContainer>
-
       <ImageContainer className={odd ? 'odd' : ''}>
         <img src={image} alt={`Obraz dla ${name}`} />{' '}
+        {isTabletS && (
+          <>
+            <ButtonsContainer>
+              {liveLink && <Button type="live" link={liveLink} />}
+              {codeLink && <Button type="code" link={codeLink} />}
+            </ButtonsContainer>
+            <TechnologiesContainer>
+              {technologies?.map(item => {
+                const icon = skillsList.find(skill => skill.name === item);
+
+                return icon ? (
+                  <TechnologyItem key={item} src={icon.src} alt={icon.name} />
+                ) : undefined;
+              })}
+            </TechnologiesContainer>
+          </>
+        )}
       </ImageContainer>
     </Wrapper>
   );

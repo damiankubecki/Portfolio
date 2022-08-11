@@ -11,8 +11,11 @@ import {
   Skills,
   ArrowDown,
 } from './HeaderElements';
+import useMediaQueries from 'hooks/useMediaQueries';
 
 const Header = () => {
+  const { isTabletS } = useMediaQueries();
+
   const scrollToNextSection = () => {
     const windowHeight = window.innerHeight;
 
@@ -33,7 +36,7 @@ const Header = () => {
       <BottomSection>
         <MyPhoto />
         <Skills skillsList={skillsList} />
-        <ArrowDown handleClick={scrollToNextSection} />
+        {!isTabletS && <ArrowDown handleClick={scrollToNextSection} />}
       </BottomSection>
     </Wrapper>
   );

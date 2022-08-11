@@ -1,11 +1,16 @@
 import styled from 'styled-components';
+import { media } from 'theme/media';
 
 const Wrapper = styled.div`
-  height: 60%;
+  height: 65%;
   width: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: ${media.tablet_S}) {
+    height: 50%;
+  }
 `;
 
 const Img = styled.img`
