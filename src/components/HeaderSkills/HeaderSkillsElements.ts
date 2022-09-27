@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 125px;
+  height: 110px;
   width: 75vw;
   max-width: 1400px;
   transform: translate(-50%, -50%);
@@ -18,11 +18,11 @@ const Wrapper = styled.div`
   border-radius: 10px;
 
   @media (max-width: ${media.laptop}) {
-    height: 125px;
+    height: 100px;
     width: 80vw;
   }
   @media (max-width: ${media.tablet_L}) {
-    height: 115px;
+    height: 90px;
     width: 90vw;
   }
   @media (max-width: ${media.tablet_S}) {

@@ -51,7 +51,7 @@ const MyPhoto = styled.div`
   height: 600px;
   width: 550px;
   position: absolute;
-  bottom: calc(160px + 125px / 2);
+  bottom: calc(160px + 110px / 2);
   left: calc(50% + 110px);
   background-image: url(${meIMG});
   background-position: top center;
@@ -59,13 +59,14 @@ const MyPhoto = styled.div`
   transform: scaleX(-1);
 
   @media (max-width: ${media.laptop}) {
+    bottom: calc(160px + 100px / 2);
     left: calc(50% + 70px);
   }
   @media (max-width: ${media.tablet_L}) {
     height: 400px;
     width: 370px;
     left: calc(50% + 150px);
-    bottom: calc(160px + 115px / 2);
+    bottom: calc(160px + 90px / 2);
   }
   @media (max-width: ${media.tablet_M}) {
     left: 50%;

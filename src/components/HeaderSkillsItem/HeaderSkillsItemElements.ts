@@ -2,14 +2,18 @@ import styled from 'styled-components';
 import { media } from 'theme/media';
 
 const Wrapper = styled.div`
-  height: 65%;
-  width: 100px;
+  height: 60%;
+  width: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  @media (max-width: ${media.tablet_S}) {
-    height: 50%;
+  @media (max-width: ${media.laptop}) {
+    width: 70px;
+  }
+  @media (max-width: ${media.tablet_L}) {
+    height: 60%;
+    width: 65px;
   }
 `;
 

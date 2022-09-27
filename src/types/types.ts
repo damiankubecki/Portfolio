@@ -10,7 +10,9 @@ type technologies =
   | 'react'
   | 'redux'
   | 'npm'
-  | 'git';
+  | 'git'
+  | 'node'
+  | 'mongodb';
 
 export interface ITheme {
   primary: string;

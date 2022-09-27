@@ -53,7 +53,7 @@ const MainProjectItem = ({
         )}
       </DescriptionContainer>
       <ImageContainer className={odd ? 'odd' : ''}>
-        <img src={image} alt={`Obraz dla ${name}`} />{' '}
+        <img src={image} alt={`Obraz dla ${name}`} title={name} />{' '}
         {isTabletS && (
           <>
             <ButtonsContainer>
@@ -65,7 +65,7 @@ const MainProjectItem = ({
                 const icon = skillsList.find(skill => skill.name === item);
 
                 return icon ? (
-                  <TechnologyItem key={item} src={icon.src} alt={icon.name} />
+                  <TechnologyItem key={item} src={icon.src} alt={icon.name} title={icon.name} />
                 ) : undefined;
               })}
             </TechnologiesContainer>
