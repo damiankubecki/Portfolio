@@ -15,6 +15,11 @@ const Wrapper = styled.div`
     height: 60%;
     width: 65px;
   }
+  @media (max-width: ${media.tablet_S}) {
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+  }
 `;
 
 const Img = styled.img`

@@ -78,7 +78,7 @@ const TechnologiesContainer = styled.div`
 `;
 
 const TechnologyItem = styled.img`
-  height: 45px;
+  height: 40px;
   margin: 0 2px;
   filter: grayscale(30%);
 `;

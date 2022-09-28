@@ -26,9 +26,11 @@ const Wrapper = styled.div`
     width: 90vw;
   }
   @media (max-width: ${media.tablet_S}) {
-    height: 70px;
+    height: auto;
     width: 100vw;
+    padding: 10px 15px;
     border-radius: 0;
+    flex-wrap: wrap;
   }
 `;
 

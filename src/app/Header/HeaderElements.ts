@@ -15,6 +15,10 @@ const Wrapper = styled.header`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (max-width: ${media.tablet_S}) {
+    height: auto;
+  }
 `;
 
 const TopSection = styled.div`
@@ -32,8 +36,8 @@ const TopSection = styled.div`
     padding: 50px 50px 0;
   }
   @media (max-width: ${media.tablet_S}) {
-    padding: 20px 10px 0;
-    height: calc(100vh - 35px);
+    padding: 20px 10px 100px;
+    height: auto;
   }
 `;
 
@@ -76,7 +80,7 @@ const MyPhoto = styled.div`
     right: 0;
     height: 290px;
     width: 260px;
-    bottom: 35px;
+    bottom: 60px;
   }
 `;
 

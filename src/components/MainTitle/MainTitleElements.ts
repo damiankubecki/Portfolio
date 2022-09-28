@@ -10,6 +10,7 @@ const Title = styled.h2`
   font-size: ${({ theme }) => theme.fontSize.xxl};
 
   @media (max-width: ${media.tablet_S}) {
+    margin-top: 15px;
     font-size: ${({ theme }) => theme.fontSize.xl};
   }
 `;
