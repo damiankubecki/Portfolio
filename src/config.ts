@@ -77,7 +77,7 @@ export const projectsList: IProject[] = [
   },
   {
     name: 'Slots',
-    note: 'Moja pierwsza aplikacja napisana w typescript. Jest to gra (slots/jednoręki bandyta) zaprogramowana obiektowo. Użytkownik w prosty sposób może zmenić stawkę zakładu, a także stan swojego wirtualnego portfela. Wyświetlane są również ostatnie aktywności gracza oraz statystyki rozgrywki.',
+    note: 'Aplikacja napisana w czystym typescript. Jest to gra (slots/jednoręki bandyta) zaprogramowana obiektowo. Użytkownik w prosty sposób może zmenić stawkę zakładu, a także stan swojego wirtualnego portfela. Wyświetlane są również ostatnie aktywności gracza oraz statystyki rozgrywki.',
     liveLink: 'https://slots-online.netlify.app/',
     codeLink: 'https://github.com/damiankubecki/Slots',
     technologies: ['html', 'sass', 'typescript'],
