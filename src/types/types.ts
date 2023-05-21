@@ -9,6 +9,8 @@ type technologies =
   | 'typescript'
   | 'react'
   | 'redux'
+  | 'rxjs'
+  | 'angular'
   | 'npm'
   | 'git'
   | 'node'

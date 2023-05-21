@@ -12,6 +12,8 @@ import npm from 'images/icons/npm.png';
 import git from 'images/icons/git.png';
 import node from 'images/icons/nodejs.png';
 import mongodb from 'images/icons/mongodb.png';
+import angular from 'images/icons/angular.png';
+import rxjs from 'images/icons/rxjs.png';
 import slots from 'images/projects/slots.png';
 import fizjolifting from 'images/projects/fizjolifting.png';
 import portfolio from 'images/projects/portfolio.png';
@@ -19,6 +21,7 @@ import fruitExplorer from 'images/projects/fruitExplorer.png';
 import saper from 'images/projects/saper.png';
 import kursyWalut from 'images/projects/kursyWalut.png';
 import otoauto from 'images/projects/otoauto.png';
+import alekino from 'images/projects/alekino.png';
 
 export const headerContent: IHeaderContent = {
   title: 'Damian Kubecki',
@@ -58,8 +61,10 @@ export const skillsList: IIconItem[] = [
   { name: 'styled-components', src: styledComponents },
   { name: 'javascript', src: js },
   { name: 'typescript', src: ts },
-  { name: 'react', src: react },
   { name: 'redux', src: redux },
+  { name: 'react', src: react },
+  { name: 'rxjs', src: rxjs },
+  { name: 'angular', src: angular },
   { name: 'node', src: node },
   { name: 'mongodb', src: mongodb },
   { name: 'npm', src: npm },
@@ -67,6 +72,13 @@ export const skillsList: IIconItem[] = [
 ];
 
 export const projectsList: IProject[] = [
+  {
+    name: 'alekino',
+    note: 'Aplikacja służąca do rezerwacji biletów w kinie. Alekino zawiera możliwość zarządania filmami, repertuarem, salami kinowymi oraz kodami zniżkowmi. Dla użytkownika nie będącego administratorem udostępniony został interfejs pozwalający przejść przez cały proces od rezerwacji wybranego miejsca na seans do zakupu biletu. Projekt powstał przy użyciu Angulara w wersji 15 oraz RxJs, a baza danych obsługiwana jest przez json-server oraz json-server-auth. W celu podglądu apliakcji należy postawić ją lokalnie i uruchomić.',
+    codeLink: 'https://github.com/damiankubecki/ale-kino',
+    technologies: ['sass', 'typescript', 'rxjs', 'angular'],
+    image: alekino,
+  },
   {
     name: 'otoauto',
     note: 'Fullstackowy serwis ogłoszeniowy kupna/sprzedaży samochodów. Aplikacja posiada przerzysty interfejs, z poziomu którego możemy utworzyć konto użytkownika/zalogować się, dodawać ogłoszenia oraz przeglądać istniejące. Frontend aplikacji stworzyłem przy użyciu typescript + react, natomiast na backendzie wykorzostałem: node.js, express, mongoDB, mongoose.',
