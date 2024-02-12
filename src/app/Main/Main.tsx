@@ -3,7 +3,7 @@ import { Wrapper, Title, Projects } from './MainElements';
 
 const Main = () => (
   <Wrapper>
-    <Title>Ostatnie projekty</Title>
+    <Title>Ogólnodostępne projekty</Title>
     <Projects />
   </Wrapper>
 );

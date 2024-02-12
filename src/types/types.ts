@@ -14,7 +14,10 @@ type technologies =
   | 'npm'
   | 'git'
   | 'node'
-  | 'mongodb';
+  | 'mongodb'
+  | 'postgresql'
+  | 'sequelize'
+  | 'cypress';
 
 export interface ITheme {
   primary: string;
